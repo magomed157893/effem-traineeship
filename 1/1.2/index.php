@@ -47,7 +47,7 @@ function getNamesLength(array $strings): array
         if (!is_string($string)) {
             throw new TypeError('только строки разрешены');
         }
-        $result[] = $string;
+        $result[] = strlen($string);
     }
     return $result;
 }
