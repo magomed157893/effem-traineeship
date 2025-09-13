@@ -18,10 +18,10 @@ function getStatusMessage(string $status): string
     };
 }
 
-// var_dump(getStatusMessage('success')); // ✅ "Операция выполнена успешно"
-// var_dump(getStatusMessage('error'));   // ✅ "Произошла ошибка"
-// var_dump(getStatusMessage('pending')); // ✅ "Операция в ожидании"
-// var_dump(getStatusMessage('unknown')); // ❌ "Неизвестный статус"
+// echo getStatusMessage('success'); // ✅ "Операция выполнена успешно"
+// echo getStatusMessage('error');   // ✅ "Произошла ошибка"
+// echo getStatusMessage('pending'); // ✅ "Операция в ожидании"
+// echo getStatusMessage('unknown'); // ❌ "Неизвестный статус"
 
 // ###############
 // ## Задание 2:
@@ -33,8 +33,8 @@ function calculatePrice(int|float $basePrice, int|float $discount, int|float $ta
     return $basePrice - ($basePrice * $discount / 100);
 }
 
-// var_dump(calculatePrice(basePrice: 1000, discount: 10, tax: 5)); // ✅ 945
-// var_dump(calculatePrice(tax: 5, discount: 10, basePrice: 2000)); // ✅ 1890
+// echo calculatePrice(basePrice: 1000, discount: 10, tax: 5); // ✅ 945
+// echo calculatePrice(tax: 5, discount: 10, basePrice: 2000); // ✅ 1890
 
 // ###############
 // ## Задание 3:
@@ -50,7 +50,7 @@ class User
 }
 
 // $user = new User(1, 'Иван', 'ivan@example.com');
-// var_dump($user->name); // ✅ "Иван"
+// echo $user->name; // ✅ "Иван"
 // $user->name = 'Петр';  // ❌ Ошибка! Свойство `readonly`
 
 // ###############
@@ -73,9 +73,9 @@ function getDeliveryMessage(OrderStatus $status): string
     };
 }
 
-// var_dump(getDeliveryMessage(OrderStatus::Pending));   // ✅ "Заказ в ожидании"
-// var_dump(getDeliveryMessage(OrderStatus::Shipped));   // ✅ "Заказ отправлен"
-// var_dump(getDeliveryMessage(OrderStatus::Delivered)); // ✅ "Заказ доставлен"
+// echo getDeliveryMessage(OrderStatus::Pending);   // ✅ "Заказ в ожидании"
+// echo getDeliveryMessage(OrderStatus::Shipped);   // ✅ "Заказ отправлен"
+// echo getDeliveryMessage(OrderStatus::Delivered); // ✅ "Заказ доставлен"
 
 // ###############
 // ## Задание 5:
@@ -92,10 +92,10 @@ function getUserEmail(object $user): string
 //     ]
 // ];
 
-// var_dump(getUserEmail($user)); // ✅ "test@example.com"
+// echo getUserEmail($user); // ✅ "test@example.com"
 
 // $user = (object)[
 //     'profile' => null
 // ];
 
-// var_dump(getUserEmail($user)); // ✅ "Email не найден"
+// echo getUserEmail($user); // ✅ "Email не найден"

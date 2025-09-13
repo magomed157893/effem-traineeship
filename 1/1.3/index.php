@@ -13,16 +13,16 @@ function filterEvenNumbers(array $numbers): array
     return array_filter($numbers, fn(int $number) => $number % 2 === 0);
 }
 
-// var_dump(filterEvenNumbers([1, 2, 3, 4, 5, 6])); // ✅ Ожидаемый результат: [2, 4, 6]
-// var_dump(filterEvenNumbers([11, 15, 21]));       // ✅ Ожидаемый результат: []
+// print_r(filterEvenNumbers([1, 2, 3, 4, 5, 6])); // ✅ Ожидаемый результат: [2, 4, 6]
+// print_r(filterEvenNumbers([11, 15, 21]));       // ✅ Ожидаемый результат: []
 
 function squareNumbers(array $numbers): array
 {
     return array_map(fn(int $number) => $number ** 2, $numbers);
 }
 
-// var_dump(squareNumbers([1, 2, 3, 4])); // ✅ Ожидаемый результат: [1, 4, 9, 16]
-// var_dump(squareNumbers([-2, 5, 10]));  // ✅ Ожидаемый результат: [4, 25, 100]
+// print_r(squareNumbers([1, 2, 3, 4])); // ✅ Ожидаемый результат: [1, 4, 9, 16]
+// print_r(squareNumbers([-2, 5, 10]));  // ✅ Ожидаемый результат: [4, 25, 100]
 
 $users = [
     ['id' => 1, 'name' => 'Alice', 'email' => 'alice@example.com'],
@@ -34,4 +34,4 @@ function getUserEmails(array $users): array
     return array_map(fn(array $user) => $user['email'], $users);
 }
 
-// var_dump(getUserEmails($users)); // ✅ Ожидаемый результат: ["alice@example.com", "bob@example.com"]
+// print_r(getUserEmails($users)); // ✅ Ожидаемый результат: ["alice@example.com", "bob@example.com"]

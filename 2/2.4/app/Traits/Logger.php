@@ -6,6 +6,6 @@ trait Logger
 {
     public function log(string $message): void
     {
-        var_dump("[LOG]: $message");
+        echo "[LOG]: $message";
     }
 }

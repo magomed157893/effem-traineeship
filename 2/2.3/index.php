@@ -32,7 +32,7 @@ class Rectangle extends Shape
 
     public function draw(): void
     {
-        var_dump("Рисую прямоугольник шириной $this->width и высотой $this->height");
+        echo "Рисую прямоугольник шириной $this->width и высотой $this->height";
     }
 }
 
@@ -52,7 +52,7 @@ class Circle extends Shape
 
     public function draw(): void
     {
-        var_dump("Рисую круг радиусом $this->radius");
+        echo "Рисую круг радиусом $this->radius";
     }
 }
 
@@ -61,10 +61,10 @@ class Circle extends Shape
 // ###############
 
 // $rect = new Rectangle(10, 5);
-// var_dump($rect->getArea()); // ✅ 50
+// echo $rect->getArea(); // ✅ 50
 
 // $circle = new Circle(7);
-// var_dump($circle->getArea()); // ✅ 153.94 (пример для π * r²)
+// echo $circle->getArea(); // ✅ 153.94 (пример для π * r²)
 
 // ###############
 // ## Задание 2:
@@ -83,16 +83,16 @@ class Circle extends Shape
 function renderShape(Shape $shape)
 {
     $shape->draw();
-    var_dump("Площадь: {$shape->getArea()}");
+    echo "Площадь: {$shape->getArea()}";
 }
 
 // renderShape(new Rectangle(5, 5));  
-// // ✅ "Рисую прямоугольник шириной 5 и высотой 5"
-// // ✅ "Площадь: 25"
+// ✅ "Рисую прямоугольник шириной 5 и высотой 5"
+// ✅ "Площадь: 25"
 
 // renderShape(new Circle(3));  
-// // ✅ "Рисую круг радиусом 3"
-// // ✅ "Площадь: 28.27"
+// ✅ "Рисую круг радиусом 3"
+// ✅ "Площадь: 28.27"
 
 // ###############
 // ## Задание 4:
@@ -112,12 +112,12 @@ class Car extends Vehicle implements Fuelable
 {
     public function move(): void
     {
-        var_dump('Машина едет');
+        echo 'Машина едет';
     }
 
     public function refuel(): void
     {
-        var_dump('Машина заправлена');
+        echo 'Машина заправлена';
     }
 }
 
@@ -125,7 +125,7 @@ class Bike extends Vehicle
 {
     public function move(): void
     {
-        var_dump('Велосипед едет');
+        echo 'Велосипед едет';
     }
 }
 

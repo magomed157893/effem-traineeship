@@ -31,7 +31,7 @@ class BankAccount implements Payable
     public function withdraw(int $amount)
     {
         if ($amount > $this->balance) {
-            var_dump('Ошибка: недостаточно средств');
+            echo 'Ошибка: недостаточно средств';
             return false;
         }
 
@@ -41,7 +41,7 @@ class BankAccount implements Payable
 
     public function pay(int $amount): void
     {
-        if ($this->withdraw($amount)) var_dump("Баланс уменьшился на $amount");
+        if ($this->withdraw($amount)) echo "Баланс уменьшился на $amount";
     }
 }
 
@@ -72,7 +72,7 @@ class CreditAccount extends BankAccount
     public function pay(int $amount): void
     {
         $this->withdraw($amount);
-        var_dump("Баланс ушел в {$this->getBalance()}");
+        echo "Баланс ушел в {$this->getBalance()}";
     }
 }
 
@@ -82,15 +82,15 @@ class CreditAccount extends BankAccount
 
 // $account = new BankAccount(1000);
 // $account->deposit(500);
-// var_dump($account->getBalance()); // ✅ 1500
+// echo $account->getBalance(); // ✅ 1500
 
 // $account->withdraw(300);
-// var_dump($account->getBalance()); // ✅ 1200
+// echo $account->getBalance(); // ✅ 1200
 
 // $account->withdraw(5000); // ❌ Ошибка: недостаточно средств
 
 // $account->withdraw(1200);
-// var_dump($account->getBalance()); // ✅ 0
+// echo $account->getBalance(); // ✅ 0
 
 // ###############
 // ## Задание 2:
@@ -98,7 +98,7 @@ class CreditAccount extends BankAccount
 
 // $savings = new SavingsAccount(1000, 5);
 // $savings->applyInterestRate();
-// var_dump($savings->getBalance()); // ✅ 1050
+// echo $savings->getBalance(); // ✅ 1050
 
 // ###############
 // ## Задание 3:
@@ -106,7 +106,7 @@ class CreditAccount extends BankAccount
 
 // $credit = new CreditAccount(1000);
 // $credit->withdraw(1500);
-// var_dump($credit->getBalance()); // ✅ -500 (допустимый минус)
+// echo $credit->getBalance(); // ✅ -500 (допустимый минус)
 
 // ###############
 // ## Задание 4:

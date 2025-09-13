@@ -21,7 +21,7 @@ trait Loggable
 {
     public function log(string $message): void
     {
-        var_dump("[LOG]: $message");
+        echo "[LOG]: $message";
     }
 }
 
@@ -83,7 +83,7 @@ class ElectricCar extends Car
 // ###############
 
 // $car = new Car('Toyota', 'Camry', 2020);
-// var_dump($car->getCarInfo()); // ✅ "Toyota Camry, 2020"
+// echo $car->getCarInfo(); // ✅ "Toyota Camry, 2020"
 
 // ###############
 // ## Задание 2:
@@ -91,24 +91,24 @@ class ElectricCar extends Car
 
 // $car = new Car('Toyota', 'Camry', 2020);
 // $car->setYear(2022);
-// var_dump($car->getYear()); // ✅ 2022
+// echo $car->getYear(); // ✅ 2022
 
 // ###############
 // ## Задание 3:
 // ###############
 
 // $tesla = new ElectricCar('Tesla', 'Model S', 2021, 100);
-// var_dump($tesla->getCarInfo()); // ✅ "Батарея: 100 kWh"
+// echo $tesla->getCarInfo(); // ✅ "Батарея: 100 kWh"
 
 // ###############
 // ## Задание 4:
 // ###############
 
 // $car = new Car('Ford', 'Focus', 2019);
-// var_dump($car->move()); // ✅ "Машина едет"
+// echo $car->move(); // ✅ "Машина едет"
 
 // $bike = new Bicycle();
-// var_dump($bike->move()); // ✅ "Велосипед движется"
+// echo $bike->move(); // ✅ "Велосипед движется"
 
 // ###############
 // ## Задание 5:

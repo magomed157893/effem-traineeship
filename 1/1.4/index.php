@@ -20,9 +20,9 @@ function checkNumber(int $number): string
     return 'Ноль';
 }
 
-// var_dump(checkNumber(10)); // ✅ "Положительное"
-// var_dump(checkNumber(-5)); // ✅ "Отрицательное"
-// var_dump(checkNumber(0));  // ✅ "Ноль"
+// echo checkNumber(10); // ✅ "Положительное"
+// echo checkNumber(-5); // ✅ "Отрицательное"
+// echo checkNumber(0);  // ✅ "Ноль"
 
 // ###############
 // ## Задание 2:
@@ -38,10 +38,10 @@ function getAgeCategory(int $age): string
     };
 }
 
-// var_dump(getAgeCategory(8));  // ✅ "Ребенок"
-// var_dump(getAgeCategory(15)); // ✅ "Подросток"
-// var_dump(getAgeCategory(30)); // ✅ "Взрослый"
-// var_dump(getAgeCategory(70)); // ✅ "Пожилой"
+// echo getAgeCategory(8);  // ✅ "Ребенок"
+// echo getAgeCategory(15); // ✅ "Подросток"
+// echo getAgeCategory(30); // ✅ "Взрослый"
+// echo getAgeCategory(70); // ✅ "Пожилой"
 
 // ###############
 // ## Задание 3:
@@ -77,10 +77,10 @@ function factorial(int $n): int
     return $factorial;
 }
 
-// var_dump(factorial(5)); // ✅ 120
-// var_dump(factorial(3)); // ✅ 6
-// var_dump(factorial(1)); // ✅ 1
-// var_dump(factorial(0)); // ✅ 1
+// echo factorial(5); // ✅ 120
+// echo factorial(3); // ✅ 6
+// echo factorial(1); // ✅ 1
+// echo factorial(0); // ✅ 1
 
 // ###############
 // ## Задание 5:

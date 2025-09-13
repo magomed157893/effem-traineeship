@@ -11,7 +11,7 @@ ini_set('display_errors', 'on');
 // require(__DIR__ . '/app/Models/User.php');
 
 // $user = new App\Models\User('Иван');
-// var_dump($user->getName()); // ✅ "Иван"
+// echo $user->getName(); // ✅ "Иван"
 
 // ###############
 // ## Задание 2:
@@ -20,7 +20,7 @@ ini_set('display_errors', 'on');
 // require_once(__DIR__ . '/vendor/autoload.php');
 
 // $user = new App\Models\User('Анна');
-// var_dump($user->getName()); // ✅ "Анна"
+// echo $user->getName(); // ✅ "Анна"
 
 // ###############
 // ## Задание 3:
@@ -29,7 +29,7 @@ ini_set('display_errors', 'on');
 // require_once(__DIR__ . '/vendor/autoload.php');
 
 // $service = new App\Services\UserService();
-// var_dump($service->getUserGreeting('Олег')); // ✅ "Привет, Олег!"
+// echo $service->getUserGreeting('Олег'); // ✅ "Привет, Олег!"
 
 // ###############
 // ## Задание 4:
@@ -38,7 +38,7 @@ ini_set('display_errors', 'on');
 // require_once(__DIR__ . '/vendor/autoload.php');
 
 // $service = new App\Services\UserService();
-// var_dump($service->getUserGreeting('Мария')); // ✅ "Привет, Мария!"
+// echo $service->getUserGreeting('Мария'); // ✅ "Привет, Мария!"
 
 // ###############
 // ## Задание 5:

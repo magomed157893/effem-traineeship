@@ -16,8 +16,8 @@ function greetUser(string $name, string $lang = 'ru'): string
     };
 }
 
-// var_dump(greetUser('Иван'));       // ✅ "Привет, Иван!"
-// var_dump(greetUser('John', 'en')); // ✅ "Hello, John!"
+// echo greetUser('Иван');       // ✅ "Привет, Иван!"
+// echo greetUser('John', 'en'); // ✅ "Hello, John!"
 
 // ###############
 // ## Задание 2:
@@ -28,8 +28,8 @@ function calculateDiscount(int|float $price, int|float $discount = 10): int|floa
     return $price - ($price * $discount / 100);
 }
 
-// var_dump(calculateDiscount(price: 1000));               // ✅ Ожидаемый результат: 900
-// var_dump(calculateDiscount(price: 2000, discount: 20)); // ✅ Ожидаемый результат: 1600
+// echo calculateDiscount(price: 1000);               // ✅ Ожидаемый результат: 900
+// echo calculateDiscount(price: 2000, discount: 20); // ✅ Ожидаемый результат: 1600
 
 // ###############
 // ## Задание 3:
@@ -43,8 +43,8 @@ function orderPizza(string $size = 'medium', string $crust = 'thin', array $topp
     };
 }
 
-// var_dump(orderPizza(toppings: ['cheese', 'pepperoni'])); // ✅ "Заказ: medium пицца на тонком тесте с cheese, pepperoni"
-// var_dump(orderPizza(size: 'large', crust: 'thick'));     // ✅ "Заказ: large пицца на толстом тесте с cheese"
+// echo orderPizza(toppings: ['cheese', 'pepperoni']); // ✅ "Заказ: medium пицца на тонком тесте с cheese, pepperoni"
+// echo orderPizza(size: 'large', crust: 'thick');     // ✅ "Заказ: large пицца на толстом тесте с cheese"
 
 // ###############
 // ## Задание 4:
@@ -57,8 +57,8 @@ function formatText(string $text, bool $uppercase = false): string
     return $text;
 }
 
-// var_dump(formatText('hello'));       // ✅ "hello"
-// var_dump(formatText('hello', true)); // ✅ "HELLO"
+// echo formatText('hello');       // ✅ "hello"
+// echo formatText('hello', true); // ✅ "HELLO"
 
 // ###############
 // ## Задание 5:
@@ -84,5 +84,5 @@ function generatePassword(int $length = 8, bool $includeNumbers = true, bool $in
     return $password;
 }
 
-// var_dump(generatePassword());                                      // ✅ Должен быть 8-значный пароль с цифрами.
-// var_dump(generatePassword(length: 12, includeSpecialChars: true)); // ✅ Должен быть 12-значный пароль с цифрами и спецсимволами.
+// echo generatePassword();                                      // ✅ Должен быть 8-значный пароль с цифрами.
+// echo generatePassword(length: 12, includeSpecialChars: true); // ✅ Должен быть 12-значный пароль с цифрами и спецсимволами.
