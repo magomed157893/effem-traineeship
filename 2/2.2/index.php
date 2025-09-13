@@ -28,7 +28,7 @@ class BankAccount implements Payable
         $this->balance += $amount;
     }
 
-    public function withdraw(int $amount)
+    public function withdraw(int $amount): bool
     {
         if ($amount > $this->balance) {
             echo 'Ошибка: недостаточно средств';
@@ -64,9 +64,10 @@ class SavingsAccount extends BankAccount
 
 class CreditAccount extends BankAccount
 {
-    public function withdraw(int $amount)
+    public function withdraw(int $amount): bool
     {
         $this->balance -= $amount;
+        return true;
     }
 
     public function pay(int $amount): void
