@@ -6,7 +6,7 @@ ini_set('display_errors', 'on');
 
 interface Movable
 {
-    public function move();
+    public function move(): string;
 }
 
 class Bicycle implements Movable
@@ -55,7 +55,7 @@ class Car implements Movable
         return "$this->brand $this->model, $this->year";
     }
 
-    public function move()
+    public function move(): string
     {
         return 'Машина едет';
     }
