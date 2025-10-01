@@ -76,7 +76,7 @@ class Database
         }
     }
 
-    public function deleteUser(int|string $id): void
+    public function deleteUser(int $id): void
     {
         try {
             $stmt = $this->conn->prepare('DELETE FROM users WHERE id = :id');
