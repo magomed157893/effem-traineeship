@@ -10,7 +10,7 @@
 -- );
 
 -- CREATE TABLE IF NOT EXISTS posts (
---     id         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+--     id         INT PRIMARY KEY AUTO_INCREMENT,
 --     user_id    INT NOT NULL,
 --     title      VARCHAR(255) NOT NULL,
 --     body       TEXT,
